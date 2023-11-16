@@ -43,4 +43,4 @@ class run2 {
     }
 }
 
-export {run2}
+export {run2, TestConstructor1}
