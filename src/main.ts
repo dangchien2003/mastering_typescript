@@ -9,6 +9,8 @@ import {
     run2
 } from './thuchanh/constructor';
 
+import {Person1} from './thuchanh/person';
+
 class Application {
     
     public static run(): void {
@@ -19,10 +21,13 @@ class Application {
         let testConstructor = new run2();
 
         let person = new Person();
+
+        let person1 = new Person1();
+        person1.printf();
         let genericService: GenericService<Person>  = new GenericService<Person>();
 
         
-        person.name = "chien12"
+        person.name = "chien12";
         genericService.add(person);
         console.log(genericService.getLast().name);
         testConstructor.print();
